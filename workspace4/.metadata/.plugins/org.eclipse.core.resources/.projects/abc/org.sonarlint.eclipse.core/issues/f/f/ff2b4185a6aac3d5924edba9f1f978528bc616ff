@@ -1,47 +1,0 @@
-
-¿%squid:RedundantThrowsDeclarationCheckD"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ç‹®Èùÿÿÿÿ8¦õˆˆ÷-HíRMINORZ
-CODE_SMELL
-q
-squid:S106"9Replace this use of System.out or System.err by a logger.(’Íïÿÿÿÿÿ8•†æ‰÷-HûRMAJORZ
-CODE_SMELL
-_squid:S1148>"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8¦õˆˆ÷-HøRMINORZVULNERABILITY
-q
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÞžÒ—üÿÿÿÿ8•µ÷‰÷-HîRMAJORZ
-CODE_SMELL
-„squid:CommentedOutCodeLineU"<This block of commented-out lines of code should be removed.(òö›Ãüÿÿÿÿ8¦õˆˆ÷-HêRMAJORZ
-CODE_SMELL
-q
-squid:S106,"9Replace this use of System.out or System.err by a logger.(Ìšùþýÿÿÿÿ8•†æ‰÷-HìRMAJORZ
-CODE_SMELL
-›squid:S1488q"hImmediately return this expression instead of assigning it to the temporary variable "nationalRankText".(Á‡¯f8§Õáˆ÷-HñRMINORZ
-CODE_SMELL
-Gsquid:S1220""Move this file to a named package.H÷RMINORZ
-CODE_SMELL
-ƒsquid:S1192|"MDefine a constant instead of duplicating this literal "', 'code': '" 3 times.(×òœk8Â·çŠ÷-HõRCRITICALZ
-CODE_SMELL
-l
-squid:S106"9Replace this use of System.out or System.err by a logger.(é±Ý™8¦õˆˆ÷-HðRMAJORZ
-CODE_SMELL
-zsquid:S1075 "ARefactor your code to get this URI from a customizable parameter.(ÍÒ÷Àüÿÿÿÿ8¦õˆˆ÷-HïRMINORZ
-CODE_SMELL
-q
-squid:S106$"9Replace this use of System.out or System.err by a logger.(æ¯Õóùÿÿÿÿ8¦õˆˆ÷-HòRMAJORZ
-CODE_SMELL
-l
-squid:S106/"9Replace this use of System.out or System.err by a logger.(°«Šµ8òžë‰÷-HóRMAJORZ
-CODE_SMELL
-l
-squid:S106:"9Replace this use of System.out or System.err by a logger.(ë©ÎË8•†æ‰÷-HùRMAJORZ
-CODE_SMELL
-€squid:S00112D"FDefine and throw a dedicated exception instead of using a generic one.(ç‹®Èùÿÿÿÿ8¦õˆˆ÷-HöRMAJORZ
-CODE_SMELL
-q
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÞžÒ—üÿÿÿÿ8ó³ÍŠ÷-HëRMAJORZ
-CODE_SMELL
-‡squid:S1192{"PDefine a constant instead of duplicating this literal "    { 'text': '" 3 times.(ß€°¸8Â·çŠ÷-HéRCRITICALZ
-CODE_SMELL
-{$squid:AssignmentInSubExpressionCheckE".Extract the assignment out of this expression.(¤Ð—Û8¦õˆˆ÷-HúRMAJORZ
-CODE_SMELL
-l
-squid:S106("9Replace this use of System.out or System.err by a logger.(þ‡òÄ8É§îŠ÷-HôRMAJORZ
-CODE_SMELL

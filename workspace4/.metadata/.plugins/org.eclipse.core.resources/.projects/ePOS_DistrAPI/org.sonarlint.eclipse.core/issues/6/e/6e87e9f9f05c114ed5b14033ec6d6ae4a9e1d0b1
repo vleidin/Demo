@@ -1,38 +1,0 @@
-
-msquid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿHÂ$RMINORZ
-CODE_SMELL
-„squid:CommentedOutCodeLine^"<This block of commented-out lines of code should be removed.(±¨®ñúÿÿÿÿ8¢ä‘•ü-HÃ$RMAJORZ
-CODE_SMELL
-‹squid:S22935"YReplace the type specification in this constructor call with the diamond operator ("<>").(ôê¦øÿÿÿÿHÄ$RMINORZ
-CODE_SMELL
-wsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(«Å¤HÅ$RMAJORZ
-CODE_SMELL
-squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(®ªÎ‡øÿÿÿÿHÆ$RCRITICALZ
-CODE_SMELL
-İ%squid:RedundantThrowsDeclarationCheck)"Remove the declaration of thrown exception 'com.sdm.cdd.exceptionhandling.EntityNotFoundException' which is a subclass of 'java.lang.Exception'.(ûúŠşùÿÿÿÿHÇ$RMINORZ
-CODE_SMELL
-j
-squid:S106{"9Replace this use of System.out or System.err by a logger.(ïñÃ‹şÿÿÿÿHÈ$RMAJORZ
-CODE_SMELL
-xsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¢á›•HÉ$RMAJORZ
-CODE_SMELL
-‹squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‹ÂÇçHÊ$RCRITICALZ
-CODE_SMELL
-‰squid:UselessImportCheck"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›HË$RMINORZ
-CODE_SMELL
-xsquid:CommentedOutCodeLine|"<This block of commented-out lines of code should be removed.(Æ‡öçHÌ$RMAJORZ
-CODE_SMELL
-|squid:S00100c"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şˆçHÍ$RMINORZ
-CODE_SMELL
-Usquid:S14811"(Remove this unused "msg" local variable.(†÷¾ºHÎ$RMINORZ
-CODE_SMELL
-}squid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(ÆÅ©´üÿÿÿÿHÏ$RMAJORZ
-CODE_SMELL
-xsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(•¯¯•HĞ$RMAJORZ
-CODE_SMELL
-xsquid:CommentedOutCodeLinez"<This block of commented-out lines of code should be removed.(ÃĞñŒHÑ$RMAJORZ
-CODE_SMELL
-dsquid:S18541"7Remove this useless assignment to local variable "msg".(†÷¾ºHÒ$RMAJORZ
-CODE_SMELL
-}squid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(ÇªËüÿÿÿÿHÓ$RMAJORZ
-CODE_SMELL
