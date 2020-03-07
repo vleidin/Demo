@@ -1,0 +1,30 @@
+pipeline {
+	    agent any
+	    stages {
+	           stage('---Test---') {
+	               steps {
+	                     echo 'Testing..'
+	               }
+	           }
+
+	           stage('---package--') {
+	               steps {
+	                     bat "mvn -Dmaven.test.failure.ignore=true clean package"
+	                     echo 'Packaging..'
+	               }
+	           }
+
+	           stage('---Publish--') {
+	               steps {
+                             nexusPublisher nexusInstanceId: 'localnexus3', nexusRepositoryId: 'CDR_Central', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'C:\\Users\\db2admin\\.jenkins\\workspace\\CDRBuild\\target\\SpringBootRestApiExample-1.0.0.jar']], mavenCoordinate: [artifactId: 'Drop59', groupId: 'CDR_Central', packaging: 'jar', version: '$FILENAME+$VERSION']]]
+	               }
+	           }
+	    }
+
+   	    post { 
+	         always { 
+			echo 'Cleaning workspace...'
+	                cleanWs()
+	         }
+	    }
+} 
