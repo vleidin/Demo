@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG" monitorInterval="600">
+    <Properties>
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${hostName} --- [%15.15t] %-40.40c{1.} : %m%n%ex
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <!-- 
+             https://www.callicoder.com/spring-boot-log4j-2-example/
+             Rolling File Appender creates a new file whenever the log file reaches a certain threshold 
+             specified by the triggering policy. It stores the old log files with names matching
+             the pattern specified by the filePattern parameter
+             
+        <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+        -->
+
+        
+        <RollingRandomAccessFile name="LogToRollingRandomAccessFile" fileName="log/ManagedServer34.log"
+                                 filePattern="log/ManagedServer34-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                 <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [%t] %c{1}  %msg%n</Pattern>
+            </PatternLayout>
+			
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="120MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingRandomAccessFile>
+
+        
+        
+        <!-- SMTP Appender sends email in case of any errors in your application
+             Have to include spring-boot-starter-mail dependency to your pom.xml
+             to make SMTP appender to work
+                      
+        <SMTP name="MailAppender"
+              subject="Log4j2 Demo [PROD]"
+              to="youremail@example.com"
+              from="log4j2-demo-alerts@example.com"
+              smtpHost="yourSMTPHost"
+              smtpPort="587"
+              smtpUsername="yourSMTPUsername"
+              smtpPassword="yourSMTPPassword"
+              bufferSize="1">
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <Pattern>${LOG_PATTERN}</Pattern>
+            </PatternLayout>
+        </SMTP>
+         -->
+    </Appenders>
+
+    <Loggers>
+         <!-- Asynchronous Logging improves the performance compared to their synchronous counterparts.
+         Perform the following to enable Asynchronous Logging :
+                     a) update pom.xml with :
+                        <dependency>
+                            <groupId>com.lmax</groupId>
+                            <artifactId>disruptor</artifactId>
+                            <version>3.3.6</version>
+                        </dependency>
+
+                     b) Have to set the SystemProperty Log4jContextSelector to org.apache.logging.log4j.core.async.AsyncLoggerContextSelector:
+                        java -jar target/log4j2-demo-0.0.1-SNAPSHOT.jar -DLog4jContextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector
+						
+        <Root level="ERROR">
+             <AppenderRef ref="LogToRollingRandomAccessFile"/>
+        </Root>
+		-->
+        
+        <Logger  name="ca" level="ERROR" additivity="false">
+            <AppenderRef ref="LogToRollingRandomAccessFile"/>
+        </Logger>
+		
+    </Loggers>
+</Configuration>
